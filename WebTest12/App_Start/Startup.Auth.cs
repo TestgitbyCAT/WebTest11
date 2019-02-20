@@ -58,11 +58,11 @@ namespace WebTest12
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "1034592211047-mtvle8q73091u09nieiihqchk2gg1cfo.apps.googleusercontent.com",
+                ClientSecret = "MLu7JMEMpn4rT1AZPIz7tiZM"
+            });
         }
     }
 }

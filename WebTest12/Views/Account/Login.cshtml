@@ -80,7 +80,9 @@
                     </p>
                 }
             </section>
-
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
             <!-- 000000000000000000000000000000000000000000000000000000000  -->
             
             @*<div class="social-auth-links text-center">
