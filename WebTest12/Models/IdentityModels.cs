@@ -32,6 +32,12 @@ namespace WebTest12.Models
         }
     }
 
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() : base() { }
+        public ApplicationRole(string roleName) : base(roleName) { }
+    }
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -43,5 +49,7 @@ namespace WebTest12.Models
         {
             return new ApplicationDbContext();
         }
+
+        //public System.Data.Entity.DbSet<WebTest12.Models.RoleViewModel> RoleViewModels { get; set; }
     }
 }
