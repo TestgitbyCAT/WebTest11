@@ -13,13 +13,14 @@ namespace WebTest12.Controllers
             return View();
         }
 
+        [CustomAuthorize(Roles="Admin")]// User0
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
+        [CustomAuthorize(Roles = "Admin,User")]// User0, User1, User2
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
